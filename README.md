@@ -1,5 +1,5 @@
 # VHotel
-A hotel website made using HTML, CSS, and JS. Not much back-end functionality, mostly focuses on the front-end.
+A hotel website made using HTML, CSS, and JS. Not much back-end functionality, mostly focuses on the front-end. A figma file used to design the prototype is also attached in this repository.
 
 ## How to run
 - Simply use the live server extension from Visual Studio Code to run the app locally.

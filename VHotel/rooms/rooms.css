@@ -1,0 +1,283 @@
+.roomsHeader{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.imageRoom{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../res/Rooms/DoubleRoom1.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    z-index: -2;
+}
+
+.textBox{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: transparent;
+}
+.textBox h1{
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1px;
+    font-size: 58px;
+}
+.textBox p{
+    font-size: 20px;
+    margin: 15px 0 30px;
+}
+
+.rooms{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:#27374D;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color:#fff;
+}
+
+.roomHeader{
+    padding: 50px;
+    padding-bottom: 30px;
+    padding-top: 90px;
+}
+
+.roomHeader h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.roomHeader p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.sliderWrap{
+    position: relative;
+    max-width: 100rem;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+
+.squared img:hover{
+    transform: scale(1.1);
+    z-index: 30;
+    transition: 0.5s;
+}
+
+  
+.slideText {
+    text-align:left;
+    padding-right: 50px;
+    margin-left: 3rem; 
+    width: 100%;
+    color: #27374D;
+}
+.roomName{
+    display: flex;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listLeft{
+    display: flex;
+}
+
+.squared{
+    position: relative;
+    height:24rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    width: 50rem;
+}
+
+.squared img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease;
+    transform-origin: center center;
+}
+
+.image1{
+    top: 0;
+    left: 0;
+}
+
+.image2{
+    top: 0;
+    right: 0;
+}
+
+.image3{
+    bottom: 0;
+    left: 0;
+}
+
+.image4{
+    bottom: 0;
+    right: 0;
+}
+
+.listLeft ul{
+    margin-right: 4rem;
+}
+
+.slideText h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    width: fit-content;
+
+}
+.slideText h2{
+    width: fit-content;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 23px;
+    margin-left: auto;
+}
+
+.slideText p{
+    line-height: 1.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.slideText li{
+    line-height: 2rem;
+    font-size: 17px;
+    color: #27374D;
+    background-color: #fff;
+    font-weight: 400;
+}
+
+.slideText ul{
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+
+.slideHeader{
+    position: absolute;
+    left: 50%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+}
+
+
+.slide{
+    flex: 1 0 100%;
+    align-items: center;
+    padding-top: 30px;
+    display: flex;
+}
+
+@media (max-width: 1211px){
+    .slide{
+        display: block;
+    }
+    .squared{
+        margin: 10px;
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30rem;
+    }
+    .roomHeader{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .slideText{
+        padding: 30px 10%;
+        margin: 0;
+    }
+    .slide{
+        padding-top: 0;
+    }
+    .sliderWrap{
+        padding-bottom: 30px;
+    }
+    .slideText{
+        padding-top: 5px;
+    }
+    .roomName{
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    .squared{
+        width: 25rem;
+        height: 25rem;
+    }
+    .slideText h1{
+        font-size: 25px;
+    }
+    .slideText{
+        padding-top: 0;
+    }
+    .roomName{
+        padding-top: 10px;
+    }
+    .slideText h2{
+        font-size: 18px;
+    }
+    .slideText p{
+        font-size: 14px;
+    }
+    .slideText li{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 504px){
+    .squared{
+        width: 20rem;
+        height: 20rem;
+    }
+    .slideText h1{
+        font-size: 20px;
+    
+    }
+    .slideText h2{
+        font-size: 15px;
+    }
+    .listLeft ul{
+        margin-right: 2rem;
+    }
+    .slideText p{
+        font-size: 13px;
+    }
+    
+    .slideText li{
+        font-size: 13px;
+    }
+    .roomHeader h1{
+        font-size: 25px;
+    }
+    .roomHeader{
+        padding-bottom: 10px;
+    }
+    .roomHeader p{
+        font-size: 15px;
+    }
+}

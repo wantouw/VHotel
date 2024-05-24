@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VHotel</title>
+    <link rel="stylesheet" href="reservation.css" />
+    <link rel="stylesheet" href="../general/header.css" />
+    <link rel="stylesheet" href="../general/footer.css" />
+    
+  </head>
+  <body>
+      <header>
+        <nav id="navbar">
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <a class="logo" href="../home/home.html"><img id="homeLogo" src="../res/Logo2.png" alt="logo"></a>
+          <ul class="navLinks">
+            <li><a href="../rooms/rooms.html">ROOMS</a></li>
+            <li><a href="../facilities/facilities.html">FACILITIES</a></li>
+            <li><a href="../aboutUs/aboutUs.html">ABOUT US</a></li>
+          </ul>
+          <a class="book" href="../reservations/reservation.html"><button>RESERVE</button></a>
+        </nav>
+        <script src="../general/script.js"></script>
+      </header>
+    <section class="headContainer">
+      <div class="reservationHeader">
+        <div class="imageBook"></div>
+        <div class="textBox">
+          <h1>Reservation</h1>
+        </div>
+      </div>
+    </section>
+    <section class="reservationSection">
+      <div class="reservationInfo">
+        <h2>Reservation Details</h2>
+        <p>You're one step away from indulging in our luxury</p>
+      </div>
+      <form class="reservation" id="hotelForm">
+        <p class="subTitle">Name</p>
+        <div class="input" >
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <p class="error" id="errName"></p>
+        <p class="subTitle">E-mail</p>
+        <div class="input">
+          <input type="text" id="email" placeholder="Enter your e-mail address">
+        </div>
+        <p class="error" id="errEmail"></p>
+        <p class="subTitle">Check-In Date</p>
+        <div class="input">
+          <input type="date" id="checkIn">
+        </div>
+        <p class="error" id="errCheckIn"></p>
+        <p class="subTitle">Check-Out Date</p>
+        <div class="input">
+          <input type="date" id="checkOut" disabled>
+        </div>
+        <p id="req">Please fill out Check-In date first</p>
+        <p class="error" id="errCheckOut"></p>
+        <p class="subTitle">Room Type</p>
+        <div class="input">
+          <select  id="roomType">
+            <option hidden class="placehold" value="">Select your room type</option>
+            <option value="single">Single Room</option>
+            <option value="twin">Twin Room</option>
+            <option value="suite">Grand Suite</option>
+          </select>
+        </div>
+        <p class="error" id="errRoomType"></p>
+        <div class="button">
+          <input type="submit" class="button1" value="Make Reservation">
+        </div>
+        </form>
+        <script src="validation.js"></script>
+    </section>
+    <section class="footer">
+      <a class="logoFooter" href="../home/home.html">
+        <img src="../res/Logo2.png" alt="logo"/>
+      </a>
+      <p class="address">Alam Sutera Street, Serpong Sub-District <br> South Tangerang City, Banten 15325</p>
+      <div class="footerBack">
+        <ul>
+          <li><a href="../aboutUs/aboutUs.html">About Us</a></li>
+          <li>Contact Us</li>
+          <li>Careers</li>
+          <li>Privacy Policy</p>
+          <br>
+        </ul>
+        <ul>
+          <li>Terms of Use</li>
+          <li>Location</li>
+          <li><a href="../rooms/rooms.html">Rooms</a></li>
+          <li><a href="../facilities/facilities.html">Facilities</a></p>
+          <br>
+        </ul>
+      <div class="infos">
+          <div>
+              <a href="../reservations/reservation.html">Reserve Online</a>
+              <h2>Or Call: +15 800 120 2004</h2>
+          </div>
+        <h2 class="sosmed">Social Media:</h2>
+        <div class="socialMedia">
+          <img src="../res/Footer/Facebook.png" alt="fb">
+          <img src="../res/Footer/Twitter.png" alt="tw">
+          <img src="../res/Footer/Instagram.png" alt="ig">
+        </div>
+      </div>
+    </div>
+    <div class="bar"></div>
+    <div class="name">Yours truly, Ryan</div>
+  </section>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+
+.aboutUsHeader{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.imageAbout{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../res/AboutUs/AboutUs.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    z-index: -2;
+}
+
+.textBox{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: transparent;
+}
+.textBox h1{
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1px;
+    font-size: 58px;
+}
+.textBox p{
+    font-size: 20px;
+    margin: 15px 0 30px;
+}
+
+.AboutUs1{
+    height: fit-content;
+    padding: 60px;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.contain{
+    width: 700px;
+    aspect-ratio: 16/12;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.aboutPic:hover{
+    filter: brightness(90%);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.AboutUs2{
+    height: fit-content;
+    padding: 60px;
+    align-items: center;
+    text-align: center;
+    background-color: #DDE6ED;
+}
+
+.aboutInfo{
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    color: #27374d;
+}
+.aboutInfo h2{
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 35px;
+    font-size: 40px;
+}
+.aboutInfo p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 0 40px;
+    padding-bottom: 50px;
+    font-size: 17px;
+}
+
+@media (max-width: 951px){
+    .contain{
+        width: 600px;
+    }
+    .aboutInfo{
+        padding: 0px 25px;
+    }
+    .AboutUs2{
+        padding: 40px;
+        padding-bottom: 50px;
+    }
+    .AboutUs1{
+        padding: 40px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .contain{
+        width: 500px;
+    }
+    .aboutInfo{
+        padding: 0px 20px;
+    }
+    .aboutInfo h2{
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-size: 30px;
+    }
+    .aboutInfo p{
+        font-size: 13px;
+        padding-bottom: 35px;
+        line-height: 23px;
+    }
+    .AboutUs2{
+        padding: 30px;
+        padding-bottom: 40px;
+    }
+    .AboutUs1{
+        padding: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 647px){
+    .contain{
+        width: 400px;
+    }
+    .aboutInfo h2{
+        padding-bottom: 25px;
+    }
+    .aboutInfo p{
+        padding: 0;
+        padding-bottom: 35px;
+    }
+    
+}
+@media (max-width: 531px){
+    .contain{
+        width: 280px;
+    }
+    .aboutInfo h2{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .AboutUs2{
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    .AboutUs1{
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    .aboutInfo p{
+        font-size: 9px;
+        line-height: 19px;
+    }
+}
+
+

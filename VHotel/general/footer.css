@@ -1,0 +1,158 @@
+.footer{
+    background-color: #27374d;
+    padding: 40px;
+}
+
+.footerBack{
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    color: #ffffff;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.infos{
+    position: absolute;
+    right: 10%;
+    font-family: "Libre Baskerville", serif;
+    padding-bottom: 20px;
+    height: 20%;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.socialMedia img{
+    width: 25px;
+    margin: 5px;
+}
+
+.footerBack ul{
+    list-style: none;
+    padding-right: 100px;
+    padding-left: 10px;
+}
+
+
+.footerBack a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ;
+}
+
+.footerBack a:hover{
+    color:rgba(157, 178, 191, 0.8);
+    transition: all 0.5s ;
+}
+
+.infos a{
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.logoFooter{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.logoFooter img{
+    height: 30px;
+}
+
+.footerBack h2{
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+}
+
+.infos h2.sosmed{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 600;
+}
+.infos h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+.bar{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.address{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 23px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.name{
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 45px;
+    color: #fff;
+}
+
+@media (max-width: 768px){
+    .footerBack ul{
+        padding-right: 50px;
+        font-size: 14px;
+    }
+    .address{
+        font-size: 13px;
+    }
+    .infos a{
+        font-size: 16px;
+    }
+    .infos{
+        right: 5%;
+    }
+    .footerBack h2{
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 631px){
+    .footerBack ul{
+        padding-right: 15px;
+    }
+    .footer{
+        padding: 40px 20px;
+    }
+    .footerBack li{
+        font-size: 10px;
+    }
+    .address{
+        font-size: 10px;
+    }
+    .infos a{
+        font-family: "Libre Baskerville", serif;
+        font-size: 10px;
+        text-decoration: underline;
+        color: #fff;
+    }
+    .infos{
+        right: 5%;
+    }
+    .footerBack h2{
+        font-family: "Libre Baskerville", serif;
+        font-size: 10px;
+    }
+    .name{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Lora&family=Montserrat&family=Outfit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Outfit:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+nav li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.headContainer{
+    height: 100vh;
+
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  height: 10%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    height: 10%;
+    transition: all 0.8s;
+}
+
+nav.change{
+    background-color: #fff;
+    transition: all 0.8s;
+}
+
+nav.change a{
+    color: #27374d;
+}
+
+nav.change button{
+    background-color: #27374d;
+    color: #fff;
+}
+
+nav.change .line{
+    background-color: #27374d;
+}
+
+nav a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.navLinks li {
+  padding: 0 20px;
+}
+
+.navLinks li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #9db2bf;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navLinks li:hover::after {
+  width: 100%;
+}
+
+nav button {
+  padding: 9px 25px;
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  width: fit-content;
+  color: #27374d;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+nav button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav.change button:hover {
+    background-color: #212f42;
+  }
+
+.book {
+  padding-right: 5%;
+}
+
+.hamburger {
+  display: none;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
+  background-color: #9db2bf;
+}
+
+@media (max-width: 810px) {
+  nav a{
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 10%;
+    margin: 0;
+    transition: all 0.3s;
+    display: block;
+  }
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .line:nth-child(1) {
+    transform: translateX(-4px) translateY(8px) rotate(70deg);
+  }
+  .hamburger.active .line:nth-child(3) {
+    transform: translateX(4px) translateY(-8px) rotate(-70deg);
+  }
+  .navLinks {
+    position: fixed;
+    top: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav.change .navLinks{
+    background-color: #fff;
+  }
+  .navLinks li {
+    margin: 16px 0;
+  }
+  .navLinks.active {
+    top: 90px;
+  }
+  nav {
+    justify-content: center;
+  }
+  .logo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  nav button {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 85%;
+    padding: 8px 20px;
+    white-space: nowrap;
+    margin: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  nav a{
+    font-size: 18px;
+  }
+}
+
+
+
+  
+@media (max-width: 630px) {
+    nav button {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+    .logo img {
+        height: 19px;
+    }
+    nav a{
+      font-size: 14px;
+    }
+}
+    
+@media (max-width: 522px) {
+    .navLinks.active {
+        top: 70px;
+    }
+    nav button {
+        font-size: 10px;
+    }
+}

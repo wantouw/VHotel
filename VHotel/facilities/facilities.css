@@ -1,0 +1,313 @@
+.facilitiesHeader {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.imageFaci {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(../res/Facilities/Facilities.jpg);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  z-index: -2;
+}
+
+.textBox {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: transparent;
+}
+.textBox h1 {
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 1px;
+  font-size: 58px;
+}
+
+.facilities1 {
+  height: fit-content;
+  padding: 60px;
+  padding-bottom: 50px;
+  color: #27374d;
+  background-color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.facilitiesInfo h2 {
+  font-family: "Libre Baskerville", serif;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.facilitiesInfo p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.facilitiesInfo {
+  transition: all 0.3s ease 0s;
+  padding: 0px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rows {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 10px 10%;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.container {
+  width: 24rem;
+  height: 24rem;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  aspect-ratio: 9/9;
+  object-fit: cover;
+}
+
+.container .imgContain {
+  margin: 0 auto;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9/9;
+}
+
+.container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #27374d;
+  width: fit-content;
+  font-size: 25px;
+}
+
+.container .caption .wrap {
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.container:hover {
+  width: 26rem;
+  height: 26rem;
+  transition: all 0.5s;
+}
+
+.container:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+  transition: all 0.5s;
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  align-items: center;
+}
+
+.container .imgContain .details{
+  position: absolute;
+  top: 42%;
+  transform: translate(-12%, -50%);
+  left: 20%;
+  margin: 0;
+  font-size: 15px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.container .imgContain .details.active{
+  opacity: 1;
+  z-index: 3;
+  transition: all 0.5s;
+}
+
+
+.imgContain::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  pointer-events: none;
+}
+
+.moreInfo{
+  position: absolute;
+  top: 85%;
+  opacity: 1;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.moreInfo.active{
+  top: 80%;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+.moreInfo:hover{
+  background-color: #fff;
+  color: #27374d;
+  transition: all 0.5s;
+}
+
+.container:hover .moreInfo:not(.active){
+  top: 50%;
+  transition: all 0.5s;
+}
+
+
+.container:hover h2 {
+  color: #000;
+}
+
+.container:hover .wrap {
+  color: #000;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1072px) {
+  .container {
+    width: 18rem;
+    height: 18rem;
+  }
+  .container h2{
+    font-size: 20px;
+  }
+  .moreInfo{
+    font-size: 16px;
+    padding: 7px;
+  }
+  .container:hover {
+    width: 20rem;
+    height: 20rem;
+    transition: all 0.5s;
+  }
+  .facilitiesInfo h2 {
+    font-size: 30px;
+  }
+  .container .imgContain .details{
+    font-size: 12px;
+  }
+  .moreInfo.active{
+    top: 85%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 30rem;
+    height: 30rem;
+  }
+  .moreInfo{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .rows {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .container:hover {
+    width: 32rem;
+    height: 32rem;
+  }
+  .container h2{
+    font-size: 25px;
+  }
+  .container .imgContain .details{
+    font-size: 18px;
+  }
+  .moreInfo.active{
+    top: 80%;
+    font-size: 18px;
+  }
+  .facilitiesInfo p{
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 713px) {
+  .container {
+    width: 28rem;
+    height: 28rem;
+  }
+  .container:hover {
+    width: 30rem;
+    height: 30rem;
+  }
+  .facilitiesInfo h2 {
+    font-size: 28px;
+  }
+  .facilitiesInfo p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .facilitiesInfo {
+    padding: 0 0px;
+  }
+}
+
+@media (max-width: 556px) {
+  .container {
+    width: 24rem;
+    height: 24rem;
+  }
+  .container .imgContain .details{
+    font-size: 15px;
+  }
+  .container:hover {
+    width: 26rem;
+    height: 26rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .container {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .container:hover {
+    width: 24rem;
+    height: 24rem;
+  }
+}
